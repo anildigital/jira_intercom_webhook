@@ -18,6 +18,9 @@ class IntercomLinkFinder
   end
 
   def has_link?
+    puts "matchdata #{match_data}"
+    puts "app_id #{app_id}"
+    puts "conversation_id #{conversation_id}"
     match_data && app_id && conversation_id
   end
 end
