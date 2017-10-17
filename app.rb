@@ -80,6 +80,8 @@ post '/jira_to_intercom' do
             link_finder.conversation_id,
             "#{issue.reporter} linked a JIRA ticket: #{issue.hyperlink}"
           )
+          puts "Response"
+          puts @result.inspect
         end
       else
         puts "Intercom API call failed", conversation.inspect
