@@ -38,7 +38,7 @@ post '/jira_to_intercom' do
     link_finder = IntercomLinkFinder.new(jira_event.content)
 
     puts "Has link check"
-    puts link_finder.has_link?
+    puts "#{link_finder.has_link?}"
 
     # check if jira event content includes intercom conversation URL
     if link_finder.has_link?
