@@ -12,7 +12,9 @@ class IntercomLinkFinder
   end
 
   def conversation_id
-    match_data[:conversation_id]
+    conversation_id = match_data[:conversation_id]
+    puts "~~See converation id"
+    puts conversation_id
   end
 
   def has_link?
